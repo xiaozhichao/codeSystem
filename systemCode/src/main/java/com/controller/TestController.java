@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class TestController {
 	@RequestMapping("/aa")
     public String helloUser() {
-       
+       System.out.println("DD");
         return "index2";
     }
 }
