@@ -1,19 +1,19 @@
 
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" language="java" isELIgnored="false"%>
+<%
+String path = request.getContextPath();
+String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <%@include file="/WEB-INF/views/common.jsp"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title><spring:message code="application.title" /></title>
-<link rel="stylesheet" href="localstatic/css/login_ht.css" />
-<script type="text/javascript" src="${ctxPath}/js/jquery-1.9.1.min.js"></script>
+<title>登录</title>
+<link rel="stylesheet" href="<%=basePath %>css/login/login_ht.css" />
+<script type="text/javascript" src="<%=basePath %>js/jquery-1.9.1.min.js"></script>
 <script language="JavaScript">
-if (parent.window != window)
-{	
-	alert("连接超时");
-	parent.window.location.href = window.location.href;
-}
+
 </script>
 <script language="javascript" type="text/javascript">
 function validate(){
