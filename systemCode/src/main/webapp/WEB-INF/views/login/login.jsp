@@ -15,6 +15,33 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta charset="utf-8">
 <title>Paper Stack</title>
 <link rel="stylesheet" type="text/css" href="<%=basePath %>css/login/login.css" />
+<script type="text/javascript" src="<%=basePath %>js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/rsa/Barrett.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/rsa/BigInt.js"></script>
+<script type="text/javascript" src="<%=basePath %>js/rsa/RSA.js"></script>
+<script type="text/javascript">  
+function rsalogin()  
+{  
+   if($("#password").val().trim() == "" || $("#Username").val().trim() == ""){
+	   $(".error").html("账号密码不能为空");
+	   $(".error").show();
+	   return false;
+   }
+   bodyRSA();  
+   var result = encryptedString(key, $("#password").val().trim());  
+   //alert(result);  
+   loginForm.action="login.do?result="+result;  
+   loginForm.submit();  
+}  
+var key ;  
+function bodyRSA()  
+{  
+    setMaxDigits(130);  
+    key = new RSAKeyPair("10001","","8c1cd09a04ed01aafe70dc84c5f32ae23a16fe8fc8898aba6797c5a9c708720de4f08dbf086af429fc51c0636208f56de20a8ab5686affd9bdfb643ae1e90d5617155c4867eef06b0884ba8ecd187907c7069ae3eed4f0155eeca6573411864035ae803ad8fd91a0cc479f27e41b19c13465ab30f3cfbfd14de56f49cbd09481");   
+    
+}  
+  
+</script>  
 </head>
 <body>
 <div class="container">
@@ -26,6 +53,9 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 			<div>
 				<input type="password" placeholder="Password" required="" id="password" />
+			</div>
+			<div>
+				<span class="error">dddd</span>
 			</div>
 			<div>
 				<input type="submit" value="Log in" />
