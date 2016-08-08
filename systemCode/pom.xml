@@ -122,6 +122,13 @@
             <artifactId>servlet-api</artifactId>
             <version>6.0.37</version>
         </dependency>
+        
+        <!-- jstl api jar -->
+        <dependency>
+    		<groupId>jstl</groupId>
+    		<artifactId>jstl</artifactId>
+    		<version>1.2</version>
+		</dependency>
   </dependencies>
   <build>
     <finalName>systemCode</finalName>

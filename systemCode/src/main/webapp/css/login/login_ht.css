@@ -1,0 +1,8 @@
+@charset "utf-8";
+/* CSS Document */
+
+html { background:#016BA9 url(../images/login_ht1.jpg) repeat-x center top; font-size:12px;}
+
+.login_ht { margin:12% auto; width:979px; height:433px; background: url(../images/login_ht4.jpg) no-repeat center top;}
+.login_ht_table { margin:auto;}
+.login_ht_table input { background-color:#333; border:1px solid #85C9E0; height:17px; line-height:17px; color:#FFF;}
