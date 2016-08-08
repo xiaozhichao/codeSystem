@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/**
+ * 航班提醒
+ * @authors yanghuanmin
+ * @date    2014-03-03 10:22:33
+ * @version 1.0.0
+ */
+
+body{background:#f8f8f8;}
+
+.m-remind .add-remind{background:#f6f5f1;border-bottom:1px solid #c8c8c9;line-height:40px;text-align:center;color:#157dfb;font-size:18px;cursor:pointer;box-shadow:0 0 2px #ddd;margin-bottom:2px;}
+.m-remind .list li{padding:20px 0;border-bottom:1px solid #dfdfe0;background:#fff;}
+.m-remind .bar{line-height:30px;text-align:center;color:#fff;}
+.m-remind .not .bar{background:#fc3e39;}
+.m-remind .has .bar{background:#11d31b;}
+.m-remind .has .u-btn-default{display:block;margin-top:10px;}
+.m-remind .has .f-tr{display:none;}
+.m-remind .u-btn-default{display:none;}
+.m-remind .city{padding:10px;font-size:20px;}
+.m-remind .info{border-top:1px solid #dfdfe0;padding:10px 0 0;margin:0 10px;}
+
+.m-remind-create{/*padding-bottom:62px;*/}
+.m-remind-create .bd{background:#fff;}
+.m-remind-create dl{padding:10px;border-bottom:1px solid #dfdfe0;}
+.m-remind-create dt{width:125px;font-size:18px;}
+.m-remind-create select,
+.m-remind-create input{background:none;border:0;vertical-align:middle;height:27px;line-height:27px;color:#666;width:100%;}
+.m-remind-create select,
+.m-remind-create .sel{-webkit-appearance:none;background:url(../images/booker-select.png) right center no-repeat;background-size:20px;}
+.m-remind-create .pric-down{padding:0 10px;}
+.m-remind-create .btn-group{padding:20px 0;margin:0 10px;}
+
+.m-footer{background:#f1f1f1;/*position:fixed;width:100%;bottom:0;left:0;*/border-top:1px solid #dfdfe0;}
+.m-footer li{padding:10px 0 5px;text-align:center;cursor:pointer;}
+.m-footer li i{display:block;height:25px;background-repeat:no-repeat;background-position:center center;background-size:auto 25px;}
+.m-footer li p{font-size:14px;}
+.m-footer .active{color:#0479fc;}
+.m-footer .dynamic{background-image:url(../images/dynamic.png);}
+.m-footer .active .dynamic{background-image:url(../images/dynamic-active.png);}
+.m-footer .subscribe{background-image:url(../images/subscribe.png);}
+.m-footer .active .subscribe{background-image:url(../images/subscribe-active.png);}

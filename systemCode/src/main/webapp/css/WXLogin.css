@@ -1,0 +1,58 @@
+@charset "gb2312";
+/*Î¢ÐÅµÇÂ¼Ò³ÃæÊ¹ÓÃ*/
+html,body,header,footer,nav,section,article,menu,img,h1,h2,h3,h4,h5,h6,hr,p,ul,ol,li,dl,dt,dd,form,input,button,select,fieldset,legend{margin:0;padding:0;outline:none;}
+ul,ol,li{list-style:none;}
+body{font:16px/1.5 Tahoma, 'Î¢ÈíÑÅºÚ', 'ºÚÌå';color:#333;background:url(/images/res/wxbd-bg.png);}
+body,html{height:100%;}
+fieldset,button,img{border:0;}
+.g-wp{padding:15px 0;min-height:100%;margin-bottom:-45px;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+.g-ct{}
+.simple .g-wp{padding:0;margin:0;}
+.simple .g-hd{display:none;}
+.simple .g-ft{display:none;}
+
+.m-login{padding:30px 15px;}
+.m-login .set{padding:10px 0;text-align:center;}
+.m-login .set label{margin-left:50px;}
+.m-login .set label:first-child{margin:0;}
+.m-login .set input{margin-right:5px;}
+.m-login .btn{margin-top:30px;}
+
+.g-box{border-right:1px solid #fcfcfb;border-bottom:1px solid #fcfcfb;border-radius:5px;}
+.g-box .box-ct{border:1px solid #bbb;box-shadow:1px 1px 2px #ccc inset;background:#f7f7f7;border-radius:5px;}
+.g-box dl{height:45px;line-height:45px;border-top:1px solid #fff;border-bottom:1px solid #bbb;}
+.g-box dl:first-child{border-top:0;}
+.g-box dl:last-child{border-bottom:0;}
+.g-box dt{text-align:right;float:left;width:80px;}
+.g-box dd{margin-left:80px;}
+.g-box input[type=text],
+.g-box input[type=password]{border:0;background:transparent;width:100%;padding-left:10px;color:#999;float:left;height:45px;line-height:45px;}
+
+.f-bs{
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+}
+
+.btn{height:45px;line-height:45px;border:1px solid #dd4e00;border-radius:8px;color:#fff;font-size:20px;width:100%;display:inline-block;vertical-align:middle;cursor:pointer;text-shadow:1px 1px 2px #6b2803;text-align:center;
+	-webkit-box-sizing:border-box;
+	-moz-box-sizing:border-box;
+	-o-box-sizing:border-box;
+	-ms-box-sizing:border-box;
+	box-sizing:border-box;
+	background-color:#e94a03;
+	background-image:-webkit-gradient(linear, center top, center bottom, from(#fe6500), to(#e94a03));
+	background-image:-webkit-linear-gradient(#fe6500, #e94a03);
+	background-image:-moz-linear-gradient(#fe6500, #e94a03);
+	background-image:-o-linear-gradient(#fe6500, #e94a03);
+	background-image:-ms-linear-gradient(#fe6500, #e94a03);
+	background-image:linear-gradient(#fe6500, #e94a03);
+}

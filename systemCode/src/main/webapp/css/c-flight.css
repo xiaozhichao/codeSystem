@@ -1,0 +1,73 @@
+@charset "UTF-8";
+/**
+ * 机票预约流程
+ * @authors yanghuanmin
+ * @date    2014-02-17 15:16:45
+ * @version 1.0.0
+ */
+
+body{background:#f8f8f8;}
+
+/*航班搜索模块*/
+.m-flight-query{margin:0 10px;}
+.m-flight-query .fields{padding:0 0 10px;}
+.m-flight-query .fields > li{padding:5px 0;}
+.m-flight-query .fields input[type=text],
+.m-flight-query .fields input[type=date]{background:#fff url(../images/search-choose-arr.png) no-repeat right center;background-size:20px;height:42px;line-height:42px;border:1px solid #dfdfe0;width:100%;padding:0 30px 0 10px;}
+.m-flight-query .fields legend{margin-bottom:5px;padding-left:30px;background-size:auto 20px;background-repeat:no-repeat;}
+.m-flight-query .fields .col{width:30px;}
+.m-flight-query .fields .dep-city{background-image:url(../images/search-depart.png);}
+.m-flight-query .fields .arr-city{background-image:url(../images/search-arrive.png);background-size:auto 23px;}
+.m-flight-query .fields .dep-date,
+.m-flight-query .fields .arr-date{background-image:url(../images/search-date.png);background-position:5px;}
+.m-flight-query .fields .ref{width:22px;height:22px;background:url(../images/search-refresh.png) no-repeat;background-size:100%;cursor:pointer;position:absolute;left:50%;margin-left:-11px;top:40px;}
+.m-flight-query .noReturn .col{display:none;}
+.m-flight-query .noReturn .col:first-child{display:block;}
+.m-flight-query .options li{padding:5px 0 0;line-height:32px;}
+.m-flight-query .options li:last-child{padding:0;}
+.m-flight-query .options .link{display:none;}
+.m-flight-query .u-btn-default{margin-top:10px;}
+
+/*航班列表模块 */
+.m-flight-list{width:100%;overflow:hidden;}
+.m-flight-list .date{background:#eee;border-bottom:2px solid #d4d4d4;position:relative;height:54px;line-height:18px;}
+.m-flight-list .date b{font-weight:normal;}
+.m-flight-list .date ul{position:absolute;top:0;left:0;}
+.m-flight-list .date li{width:108px;padding:8px 0;text-align:center;border-bottom:4px solid transparent;cursor:pointer;position:relative;font-size:14px;}
+.m-flight-list .date li:after{content:'';position:absolute;height:36px;width:0;overflow:hidden;border-left:1px solid #bbb;border-right:1px solid #fff;right:-1px;top:50%;margin-top:-18px;}
+.m-flight-list .date .disabled{color:#999;border-color:transparent;}
+.m-flight-list .date .selected{color:#11d31b;border-bottom-color:#11d31b;}
+.m-flight-list .list{text-align:center;}
+.m-flight-list .list ul > li{cursor:pointer;border-bottom:1px solid #dfdfe0;}
+.m-flight-list .list ul > li > .f-db{padding:8px 0;}
+.m-flight-list .list b{font-weight:normal;}
+.m-flight-list .list .time{width:55px;}
+.m-flight-list .list .pric{width:78px;text-align:right;padding-right:25px;font-size:24px;color:#fc3e39;letter-spacing:-1px;line-height:50px;position:relative;}
+.m-flight-list .list .pric:after{content:'';position:absolute;top:50%;right:5px;width:10px;height:10px;border-top:2px solid #0e0c1a;border-right:2px solid #0e0c1a;margin-top:-7px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform:rotate(45deg);
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+.m-flight-list .list .prompt{padding:50px 20px;text-align:center;}
+.m-flight-list .list .active{background:#fff;}
+.m-flight-list .list .active .pric:after{
+	-webkit-transform:rotate(135deg);
+	-moz-transform:rotate(135deg);
+	-o-transform:rotate(135deg);
+	-ms-transform:rotate(135deg);
+	transform:rotate(135deg);
+}
+.m-flight-list .list ol{display:none;}
+.m-flight-list .list ol li{border-top:1px solid #dfdfe0;padding:10px 3%;text-align:left;position:relative;white-space:nowrap;}
+.m-flight-list .list ol b{font-size:20px;font-family:'黑体';display:block;}
+.m-flight-list .list ol .btn{background:#fc3e39;color:#fff;font-size:18px;text-align:center;padding:2px 20px;border-radius:3px;position:absolute;right:15px;top:48px;}
+.m-flight-list .seat-S{background:#fefbea;}
+.m-flight-list .seat-A{background:#e8f9ff;}
+.m-flight-list .seat-B{background:#e2ffe1;}

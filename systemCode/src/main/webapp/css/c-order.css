@@ -1,0 +1,182 @@
+@charset "UTF-8";
+/**
+ * 我的订单
+ * @authors yanghuanmin
+ * @date    2014-02-26 16:06:03
+ * @version 1.0.0
+ */
+
+body{background:#f8f8f8;}
+
+/* 订单状态 */
+.status-1{color:#00ab6f!important;}
+.status-2{color:#0179c5!important;}
+.status-3{color:#fc3e39!important;}
+.status-4{color:#0078FD!important;}
+
+.i-dialog{background:url(../images/i-dialog.jpg) no-repeat;width:17px;height:16px;display:inline-block;vertical-align:middle;margin-right:5px}
+
+/* 订单列表 */
+.m-orderlist{padding:0 10px 20px 10px;background: #fff;}
+.m-orderlist .item{background:#fff;padding:15px 10px;overflow:hidden;position:relative;border-bottom: 1px dashed #cccccc}
+.m-orderlist .item dl{float:left;padding:0;}
+.m-orderlist .item dl:first-child{width:60%;font-size: 18px;line-height: 30px}
+.m-orderlist .item dl:nth-child(2){width:40%;text-align: right;font-size: 22px;line-height: 30px}
+.m-orderlist .item dl:nth-child(2) i{font-size: 12px}
+.m-orderlist .item dl:nth-child(2) dd{width: 100%}
+.m-orderlist .item dl:nth-child(3){width:60%;}
+.m-orderlist .item dl:nth-child(4){width:40%;text-align: right;}
+.m-orderlist .item dl:nth-child(4) dd{width: 100%}
+.m-orderlist .item dl .d-s{color: #000}
+.m-orderlist .item dl .orderno{font-size: 12px}
+.m-orderlist .item dl:nth-child(4) dd i{
+	position: relative;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: #00ab6e;
+	border-radius: 3px;
+	vertical-align: middle;
+}
+.m-orderlist .item dl:nth-child(4) dd i:after{
+	position: absolute;
+	left: 0;
+	top: 3px;
+	content:'';
+	width:8px;
+	height:8px;
+	border-top:2px solid #fff;
+	border-right:2px solid #fff;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform:rotate(45deg);
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+.m-orderlist .item dd{color:#929292;}
+/*
+.m-orderlist .item:after{content:'';position:absolute;top:50%;right:15px;width:10px;height:10px;border-top:2px solid #0e0c1a;border-right:2px solid #0e0c1a;margin-top:-5px;
+	-webkit-transform:rotate(45deg);
+	-moz-transform:rotate(45deg);
+	-o-transform:rotate(45deg);
+	-ms-transform:rotate(45deg);
+	transform:rotate(45deg);
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+*/
+/* 用户订单列表 */
+.m-userorder .item{padding:15px;overflow:hidden;margin-bottom:15px;background:#fff;border-bottom:1px solid #dfdfe0;border-top:1px solid #dfdfe0;}
+.m-userorder .item:first-child{border-top:0;}
+.m-userorder .item dl{float:left;padding:5px 0;width:60%;}
+.m-userorder .item dl:nth-child(2n){width:40%;}
+.m-userorder .item dd{color:#929292;}
+.m-userorder .btn-group{width:100%;text-align:center;padding-top:10px;font-size:18px;}
+.m-userorder .btn{border-radius:3px;background:#fc3e39;color:#fff;margin:0 5px;height:42px;line-height:42px;}
+.m-userorder .btn-red{background:#fc3e39;}
+.m-userorder .btn-green{background:#11d31b;}
+.m-userorder .btn-yellow{background:#ffa200;}
+.m-userorder .disabled{background:#d3d3d3;color:#b3b3b3;}
+
+/* 订单详情 */
+.m-orderdetail{padding: 20px 0;font-family: '微软雅黑'}
+.m-orderdetail{width: 90%;margin: 0 auto}
+.m-orderdetail h2{background:#f8f8f8;height:42px;line-height:42px;font-weight:normal;padding:0 10px;border-bottom:1px solid #dfdfe0;font-size:18px;}
+.m-orderdetail .item{background:#fff;}
+.m-orderdetail .item dl{line-height:36px;padding:0;border-bottom:1px solid #e1ebe7;color: #000}
+.m-orderdetail .item dl.list-hd{color: #fff;background: #35D59B;border-top-left-radius: 5px;border-top-right-radius: 5px}
+.m-orderdetail .item dt{width:110px;;padding-left: 10px;background: #f7fdf9;color: #999999}
+.m-orderdetail .item dl.list-hd dt{background: #35D59B;color: #fff}
+.m-orderdetail .item dd{color:#000;padding-left: 10px}
+.m-orderdetail .show-more{position:relative;}
+.m-orderdetail .show-more:after{content:'';position:absolute;right:15px;top:50%;background:url(../images/order-arrow-2.png) no-repeat;background-size:100%;width:19px;height:10px;margin-top:-5px;
+	-webkit-transition:0.5s;
+	-moz-transition:0.5s;
+	-ms-transition:0.5s;
+	-o-transition:0.5s;
+	transition:0.5s;
+}
+.m-orderdetail .active:after{
+	-webkit-transform:rotate(180deg);
+	-moz-transform:rotate(180deg);
+	-o-transform:rotate(180deg);
+	-ms-transform:rotate(180deg);
+	transform:rotate(180deg);
+}
+.m-orderdetail .more-cont{margin:0 auto;display:none;}
+.m-orderdetail .more-cont dl{border-bottom: 0}
+.m-orderdetail .more-cont dt{width:110px;white-space:nowrap;}
+.m-orderdetail .total{color:#0479fc;padding:10px 30px 0px;font-size:20px;}
+
+.total-price{color: #137f59;font-size: 22px;padding: 10px 0}
+.total-price .title{color: #999999;width: 110px;padding-left: 10px;display: inline-block;font-size: 16px}
+
+.btn-group{display: box;display:-webkit-box}
+.btn-group a{box-flex: 1;-webkit-box-flex:1;display: block;padding: 5px 0;text-align: center;font-size: 20px}
+.u-btn-cancel{background: #ffc624;color: #fff}
+.u-btn-pay{background: #00ab6f;color: #fff}
+
+/* 航班变更 / 退票 */
+.m-change h2{background:#f8f8f8;border-bottom:1px solid #dfdfe0;line-height:42px;height:42px;padding:0 15px;}
+.m-change dl{border-bottom:1px solid #dfdfe0;line-height:42px;padding:0 15px;background:#fff;}
+.m-change dt{width:90px;color:#666;}
+.m-change .passengers dt{white-space:nowrap;width:auto;}
+.m-change .btn-group{padding:20px 0;margin:0 15px;}
+.m-change .select-date input{background:#fff url(../images/search-choose-arr.png) no-repeat right center;background-size:20px;height:42px;line-height:42px;padding:0 30px 0 10px;color:#999;cursor:pointer;float:left;border:0;}
+.m-change .change-list li{line-height:42px;border-bottom:1px solid #dfdfe0;padding-left:15px;background:#fff;}
+.change-dialog{padding:15px;}
+.change-dialog .succ{text-align:center;padding:15px 0;line-height:42px;font-size:20px;}
+.change-dialog .succ i{background:url(../images/change-success.png) center center;width:38px;height:38px;background-size:38px auto;display:inline-block;vertical-align:top;}
+
+/* 选择航班变更日期 */
+.m-change-fillin .item{border-bottom:1px solid #dfdfe0;background:#fff;padding:0 10px;}
+.m-change-fillin h2{background:#f8f8f8;border-bottom:1px solid #dfdfe0;line-height:42px;height:42px;padding:0 15px;}
+.m-change-fillin dl{margin:0 10px;border-bottom:1px solid #dfdfe0;line-height:42px;}
+.m-change-fillin dl:last-child{border:0;}
+.m-change-fillin dt{width:90px;}
+.m-change-fillin dd{color:#999;}
+.m-change-fillin .btn-group{padding:20px 0;margin:0 15px;}
+.m-change-fillin .select-date{background:#fff url(../images/search-choose-arr.png) no-repeat right center;background-size:20px;height:42px;line-height:42px;padding:0 30px 0 10px;color:#666;cursor:pointer;}
+
+/* 航班变更详情 */
+.m-change-detail li{background:#fff;}
+.m-change-detail h2{padding:0 10px;background:#f8f8f8;font-size:18px;line-height:42px;font-weight:normal;color:#000;}
+.m-change-detail .time{padding:10px;line-height:32px;border-top:1px solid #dfdfe0;}
+.m-change-detail .time b{font-size:20px;font-weight:normal;}
+.m-change-detail .info{margin:0 10px;padding:10px 0;border-top:1px solid #dfdfe0;}
+.m-change-detail .info h3{color:#0179c5;font-weight:normal;font-size:18px;}
+.m-change-detail .info ol{}
+.m-change-detail .change-arrow{background:url(../images/change-arrow.png);height:29px;background-size:100% 100%;text-align:center;color:#fff;margin:10px;}
+.m-change-detail .price-bar{background:#177ffc;color:#fff;padding:5px 10px;}
+.m-change-detail .handler{padding:10px;}
+.m-change-detail .total{color:#0479fc;font-size:20px;}
+.m-change-detail .clause{padding:20px 0 30px;}
+
+/* 退票详情 */
+.m-refund-detail .flight-info{margin:0 10px;}
+.m-refund-detail .flight-info .item{border-bottom:1px solid #dfdfe0;padding:10px 0;}
+.m-refund-detail .flight-info .item:last-child{border:0;}
+.m-refund-detail .flight-info dl{min-width:50%;float:left;padding:2px 0;}
+.m-refund-detail .flight-info dl:last-child{width:100%;}
+.m-refund-detail .flight-info dt{width:80px;}
+.m-refund-detail .flight-info dd{color:#999;}
+.m-refund-detail .check-bar{background:#ffa200;color:#fff;padding:5px 10px;}
+.m-refund-detail .passenger-info{margin:0 10px;padding:5px 0;}
+.m-refund-detail .passenger-info h2{font-weight:normal;font-size:18px;color:#000;padding:2px 0;}
+.m-refund-detail .passenger-info dl{min-width:50%;float:left;padding:2px 0;}
+.m-refund-detail .passenger-info dt{width:80px;}
+.m-refund-detail .passenger-info dd{color:#999;}
+.m-refund-detail .passenger-info .item{border-bottom:1px solid #dfdfe0;padding:10px 0;}
+.m-refund-detail .passenger-info .item:last-child{border:0;}
+.m-refund-detail .handler{padding:10px;border-top:1px solid #dfdfe0;}
+.m-refund-detail .total{font-size:18px;}
+.m-refund-detail .total b{font-weight:bold;color:#0479fc;font-family:Arial;}
+.m-refund-detail .clause{padding:20px 0 30px;}
