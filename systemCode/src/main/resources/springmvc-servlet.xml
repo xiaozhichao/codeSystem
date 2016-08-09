@@ -33,7 +33,7 @@
 			<!-- <mvc:mapping path="/subprodsec/**"/> -->
 			<mvc:mapping path="/test/aa"/>
 			
-			<bean class="com.interceptor.LoginInterceptor" />
+			<bean class="com.spring.interceptor.LoginInterceptor" />
 			
 		</mvc:interceptor>
 	</mvc:interceptors>

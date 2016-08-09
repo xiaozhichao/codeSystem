@@ -7,7 +7,7 @@
   <display-name>Archetype Created Web Application</display-name>
   <welcome-file-list>
     <!-- <welcome-file>login.jsp</welcome-file>-->
-      <welcome-file>/WEB-INF/views/login/login.jsp</welcome-file>
+      <welcome-file>login.jsp</welcome-file>
   </welcome-file-list>
   <!-- Spring mvc 配置，配置文件名称默认为{servlet-name}-servlet.xml，路径默认在/WEB-INF/下 -->
   <servlet>
