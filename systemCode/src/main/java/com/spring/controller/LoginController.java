@@ -9,7 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.spring.entity.Test;
-import com.spring.service.ITestService;
+import com.spring.service.TestService;
 
 @Controller
 @RequestMapping(value="member")
@@ -17,7 +17,7 @@ public class LoginController {
 	private static final Logger logger = Logger.getLogger(LoginController.class);
 	
 	@Autowired
-    private ITestService testService ;
+    private TestService testService ;
 	/**
 	 * √‹¬Î—È÷§
 	 * @return

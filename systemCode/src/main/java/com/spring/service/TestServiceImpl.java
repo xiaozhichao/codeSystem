@@ -1,22 +1,22 @@
-package com.spring.service.Imp;
+package com.spring.service;
 
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.spring.dao.ITestDao;
+import com.spring.dao.TestMapper;
 import com.spring.entity.Test;
-import com.spring.service.ITestService;
+import com.spring.service.TestService;
 @Service("testService")
-public class TestService implements ITestService {
+public class TestServiceImpl implements TestService {
 	@Autowired
-    private ITestDao testDao ;
+    private TestMapper testMapper ;
 
 	@Override
 	public Test findAll() {
 		// TODO Auto-generated method stub
-		return testDao.selectByPrimaryKey(1);
+		return testMapper.selectByPrimaryKey(1);
 	}
 	
 	

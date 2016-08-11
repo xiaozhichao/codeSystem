@@ -9,9 +9,9 @@
   <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-        		classpath:applicationContext.xml
-        		classpath:log4j.properties
-        		classpath:springmvc-servlet.xml
+        		classpath:spring.xml,
+        		classpath:log4j.properties,
+        		classpath:springmvc-mybatis.xml
        </param-value>
     </context-param> 
   <servlet>
@@ -20,7 +20,7 @@
        <load-on-startup>1</load-on-startup>
        <init-param>
 			<param-name>contextConfigLocation</param-name>
-			<param-value>classpath:springmvc-servlet.xml</param-value>
+			<param-value>classpath:spring-mvc.xml</param-value>
 		</init-param>
   </servlet>
   <servlet-mapping>

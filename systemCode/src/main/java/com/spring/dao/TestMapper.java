@@ -4,7 +4,7 @@ import java.util.List;
 
 import com.spring.entity.Test;
 
-public interface ITestDao {
+public interface TestMapper {
 	int deleteByPrimaryKey(Integer id);
 
     int insert(Test record);
