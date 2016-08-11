@@ -12,11 +12,12 @@ import com.spring.service.ITestService;
 public class TestService implements ITestService {
 	@Autowired
     private ITestDao testDao ;
-	
-	@Override
-	public List<Test> findAll() {
-		
-		return testDao.findAll();
-	}
 
+	@Override
+	public Test findAll() {
+		// TODO Auto-generated method stub
+		return testDao.selectByPrimaryKey(1);
+	}
+	
+	
 }

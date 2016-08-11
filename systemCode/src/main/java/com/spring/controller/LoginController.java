@@ -1,7 +1,7 @@
 package com.spring.controller;
 
 
-import java.util.List;
+
 
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,13 +24,9 @@ public class LoginController {
 	 */
 	@RequestMapping(value="check")
 	public String index(){
-		List<Test> tests = testService.findAll();
-		if(null != tests && !tests.isEmpty() ){
-			for(Test test:tests){
-				test.toString();
-			}
-		}
+		Test tests = testService.findAll();
 		
+		tests.toString();
 		logger.info("ddd");
 		return "login/login";
 	}
