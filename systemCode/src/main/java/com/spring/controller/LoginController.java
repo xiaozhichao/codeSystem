@@ -11,8 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import com.spring.entity.Test;
 import com.spring.service.TestService;
 
+
 @Controller
-@RequestMapping(value="member")
+@RequestMapping(value="login")
 public class LoginController {
 	private static final Logger logger = Logger.getLogger(LoginController.class);
 	
