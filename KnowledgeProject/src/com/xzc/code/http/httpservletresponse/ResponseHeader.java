@@ -25,7 +25,7 @@ public class ResponseHeader {
      * @param:
      * @return:void
      * @throws
-     * @author:xiaozhichao
+     * @author:xiaozhichao 
      * @date:2017年4月28日
      */
 	public void responseExcel(){
@@ -36,6 +36,7 @@ public class ResponseHeader {
 		response.setContentType("application/ms-excel;");
 		try {
 			ServletOutputStream out = response.getOutputStream();
+			System.out.println();
 		} catch (IOException e) {
 			
 					// TODO Auto-generated catch block
