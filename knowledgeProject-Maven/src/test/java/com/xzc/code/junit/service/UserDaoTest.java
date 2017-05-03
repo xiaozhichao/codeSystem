@@ -8,13 +8,30 @@ import org.junit.Test;
 import com.xzc.code.junit.entity.User;
 
 import junit.framework.TestCase;
-
+/**
+ * 
+ **************************************************
+ * ClassName:UserDaoTest
+ * @Description:TODO
+ * @author:xiaozhichao
+ * @date:2017-5-3
+ **************************************************
+ */
 public class UserDaoTest extends TestCase {
 	
 	private UserDao userDao;
 	private User user1;
     private User user2;
-	
+	/**
+	 * 
+	 * @Description:TODO
+	 * @param:
+	 * @return:void
+	 * @throws
+	 * @author:xiaozhichao 
+	 * @date:2017-5-3
+	 */
+	 
 	@BeforeClass
 	public static void beforeClass(){
 		System.out.println("beforeClass");
