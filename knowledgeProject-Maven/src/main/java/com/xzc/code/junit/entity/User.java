@@ -5,6 +5,11 @@ public class User {
 	private String name;
     private int sex;
     private int age;
+	@Override
+	public String toString() {
+		return "User [sid=" + sid + ", name=" + name + ", sex=" + sex
+				+ ", age=" + age + "]";
+	}
 	public Long getSid() {
 		return sid;
 	}
