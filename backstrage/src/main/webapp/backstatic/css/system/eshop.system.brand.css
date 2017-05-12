@@ -1,0 +1,21 @@
+.brand-sel-time{
+	display:none;
+}
+.sel-time-left{
+	    padding-right: 0;
+}
+.sel-time-right{
+	    padding-left: 0;
+	    left:0;
+}
+.brand-edit-time{
+	position: absolute;
+    top: 34px;
+    left: 0;
+    width: 81px;
+    height: 34px;
+    display:none;
+}
+.col-md-6{
+	padding-top: 15px;
+}
