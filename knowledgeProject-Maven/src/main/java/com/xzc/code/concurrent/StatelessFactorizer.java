@@ -11,7 +11,6 @@ import javax.servlet.ServletResponse;
 public class StatelessFactorizer implements Servlet {
 	
 	private long count= 0;
-	@Override
 	public void init(ServletConfig config) throws ServletException {
 
 		// TODO Auto-generated method stub
