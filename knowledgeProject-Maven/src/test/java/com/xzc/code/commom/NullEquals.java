@@ -7,6 +7,9 @@ public class NullEquals {
 	public void testNullEqualsString(){
 		String nulls = null;
 		System.out.println(nulls.equals("null"));
+		
+		
+		
 	}
 	@Test
 	public void testStringEqualsNull(){
