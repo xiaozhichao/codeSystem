@@ -5,7 +5,7 @@ import org.junit.Test;
 public class NullEquals {
 	@Test
 	public void testNullEqualsString(){
-		String nulls = null;
+		String nulls = null;//ddss
 		System.out.println(nulls.equals("null"));
 		
 		
